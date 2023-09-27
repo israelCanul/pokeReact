@@ -1,0 +1,12 @@
+.navPagination{
+    width: 100%;
+    background-color: red;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    &__limit{
+        padding: 2px;
+    }
+}

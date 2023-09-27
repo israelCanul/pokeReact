@@ -1,14 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import "./scss/app.scss";
+// import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Root, { loader as RootLoader } from "./routes/root";
+import ErrorPage from "./pages/error-page";
+import PokemonDetail from "./pages/pokemon-detail";
+import Home from "./pages/home";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { PokemonProvider } from "./context/PokemonsContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/:pokemon",
+        element: <PokemonDetail />,
+      },
+    ],
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <PokemonProvider>
+    <RouterProvider router={router} />
+  </PokemonProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,14 @@
+@import "vars.scss";
+@import "mixins.scss";
+@import "modificators.scss";
+.PokeItemsRender{
+    width: 100%;
+    // background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 5px;  
+}

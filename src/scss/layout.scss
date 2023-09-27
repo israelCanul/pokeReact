@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    background-color: $orange;
+    width: 100%;
+    height: auto;
+    .header{
+        width: 100%;
+        height: $headerSize;
+        padding: 20px 5px 5px;
+        &__logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__img{
+
+        }
+    }
+    .content{
+        // background-color: red;
+        // height: calc(100vh - #{$headerSize} - 30px);
+        width: 1000px;
+        max-width: 100%;
+        margin: 0 auto;
+        border: 1px solid rgba(red, 0.3);
+        border-radius: 5px;
+        padding: 5px;
+        // overflow: auto;
+    }
+}
