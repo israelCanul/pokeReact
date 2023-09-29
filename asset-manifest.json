@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pokeReact/static/css/main.4c94b148.css",
-    "main.js": "/pokeReact/static/js/main.bd7444ad.js",
+    "main.js": "/pokeReact/static/js/main.409edc1b.js",
     "static/js/787.f1b71fb4.chunk.js": "/pokeReact/static/js/787.f1b71fb4.chunk.js",
     "static/media/pokereact-logo.png": "/pokeReact/static/media/pokereact-logo.1fb413f5160e4ddf8f11.png",
     "static/media/Pokemon Hollow.ttf": "/pokeReact/static/media/Pokemon Hollow.47f77ce9939c5330492b.ttf",
@@ -9,11 +9,11 @@
     "index.html": "/pokeReact/index.html",
     "static/media/icons8-search.svg": "/pokeReact/static/media/icons8-search.44144c63f1114bd734334869ead5c143.svg",
     "main.4c94b148.css.map": "/pokeReact/static/css/main.4c94b148.css.map",
-    "main.bd7444ad.js.map": "/pokeReact/static/js/main.bd7444ad.js.map",
+    "main.409edc1b.js.map": "/pokeReact/static/js/main.409edc1b.js.map",
     "787.f1b71fb4.chunk.js.map": "/pokeReact/static/js/787.f1b71fb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c94b148.css",
-    "static/js/main.bd7444ad.js"
+    "static/js/main.409edc1b.js"
   ]
 }
