@@ -37,4 +37,25 @@
             color: white;
         }      
     }
+    &__wrappercontrol{
+        @extend .m_df-cc;
+        align-items: stretch;
+        justify-content: stretch;
+        background-color: white;
+        border: 1px solid rgba(0,0,0,0.4);
+        border-radius: 5px ;
+        overflow: hidden;
+    }
+    &__filter{
+        padding: 5px;
+        font-size: 1rem;
+        flex: 1;
+        border: 1px solid transparent;
+        &:focus-visible{
+            outline: rgba(0,0,0,0.4);
+        }
+    }
+    &__filterIcon{
+        vertical-align: middle;
+    }
 }
