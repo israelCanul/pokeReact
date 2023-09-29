@@ -11,10 +11,10 @@ const PagNavigation = ({
 }) => {
   const navigate = useNavigate();
   const limitChange = (e) => {
-    navigate(`/?pag=${pag}&limit=${e.target.value}`);
+    navigate(`/pokeReact/?pag=${pag}&limit=${e.target.value}`);
   };
   const pageChange = (newPage) => {
-    if (newPage != pag) navigate(`/?pag=${newPage}&limit=${limit}`);
+    if (newPage != pag) navigate(`/pokeReact/?pag=${newPage}&limit=${limit}`);
   };
 
   const renderButtons = () => {
