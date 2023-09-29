@@ -62,7 +62,7 @@ const PagNavigation = ({
 
   const updateFilter = (e) => {
     transition(() => {
-      setFilter(e.target.value);
+      setFilter(e.target.value.toLowerCase());
     });
   };
   return (
