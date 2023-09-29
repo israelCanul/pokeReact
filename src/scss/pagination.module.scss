@@ -1,6 +1,43 @@
 @import "vars.scss";
 @import "mixins.scss";
 @import "modificators.scss";
+.pagination{
+    position: relative;
+    &__filterWrapper{
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 100%;
+        height: auto;
+        background-color: rgb(226, 252, 6);
+        padding:10px 5px;
+        border-radius: 5px;
+        border: 2px solid rgb(255, 89, 0);
+        max-height: 400px;
+        overflow-y: hidden;
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: auto 1fr;
+    }
+    &__filterAction{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5px;
+        // background-color: red;
+    }
+    &__filterResult{
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+}
 .PokeItemsRender{
     width: 100%;
     // background-color: red;
