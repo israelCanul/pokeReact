@@ -1,6 +1,6 @@
 .navPagination{
     width: 100%;
-    background-color: red;
+    // background-color: red;
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -8,5 +8,33 @@
     align-items: center;
     &__limit{
         padding: 2px;
+    }
+    &__limitSelect{
+        padding: 5px;
+        font-family: 'arial';
+        line-height: 25px;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    &__pages{
+        // background-color: blue;
+        @extend .m_df-cc;
+        padding: 5px;
+        gap: 5px;
+    }
+    &__pag{
+        background: linear-gradient(90deg, rgb(226, 252, 6) 40%, rgb(255, 89, 0) 100%);
+        width: 30px;
+        height: 30px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        font-family: pokemon,'arial';
+        &--active{
+            background:  rgb(255, 89, 0) ;
+            color: white;
+        }      
     }
 }

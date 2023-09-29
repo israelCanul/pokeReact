@@ -1,0 +1,13 @@
+.navPagination{
+    &__pages{
+        background-color: blue;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+    }
+    &__pag{
+        background-color: yellow;
+        padding: 1px;
+        
+    }
+}

@@ -10,7 +10,7 @@ const Pagination = ({ items }) => {
   const location = useLocation();
   let [searchParams] = useSearchParams();
   let [pag, setPag] = useState(
-    searchParams.get("pag") ? parseInt(searchParams.get("pag")) : 0
+    searchParams.get("pag") ? parseInt(searchParams.get("pag")) : 1
   );
   let [limit, setLimit] = useState(
     searchParams.get("limit") ? parseInt(searchParams.get("limit")) : 25
@@ -18,13 +18,13 @@ const Pagination = ({ items }) => {
   let [itemsR, setItemsR] = useState([]);
 
   useEffect(() => {
-    let p = searchParams.get("pag") ? parseInt(searchParams.get("pag")) : 0;
+    let p = searchParams.get("pag") ? parseInt(searchParams.get("pag")) : 1;
     let l = searchParams.get("limit")
       ? parseInt(searchParams.get("limit"))
       : 25;
     setLimit(l);
     setPag(p);
-    setItemsR(items.slice(p * l, p * l + l));
+    setItemsR(items.slice((p - 1) * l, (p - 1) * l + l));
   }, [location]);
 
   const renderPokemons = itemsR.map((item) => {
@@ -33,9 +33,9 @@ const Pagination = ({ items }) => {
 
   return (
     <div className={`${Style.pagination}`}>
-      <PagNavigation pag={pag} limit={limit} itemsCount={itemsR.length} />
+      <PagNavigation pag={pag} limit={limit} itemsCount={items.length} />
       <div className={`${Style.PokeItemsRender}`}>{renderPokemons}</div>
-      <PagNavigation pag={pag} limit={limit} itemsCount={itemsR.length} />
+      <PagNavigation pag={pag} limit={limit} itemsCount={items.length} />
     </div>
   );
 };
