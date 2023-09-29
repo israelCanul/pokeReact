@@ -11,13 +11,6 @@ const PokeCard = ({ data }) => {
       </div>
     );
 
-  // const stats = details?.stats.forEach((stat) => {
-  //   return (
-  //     <div className={CardStyle.stat}>
-  //       {stat.stat.name}: {stat.base_stat}
-  //     </div>
-  //   );
-  // });
   return (
     <div className={CardStyle.Pokecard}>
       <div className={CardStyle.Pokecard__wrapper}>
@@ -33,7 +26,6 @@ const PokeCard = ({ data }) => {
             {data.name}
           </p>
         </div>
-        {/* <div className={CardStyle.Pokecard__stats}>{stats}</div> */}
       </div>
     </div>
   );
