@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 
 const PokemonDetail = ({ data = {}, pokeId = 0 }) => {
   let { pokemon } = useParams();
+
   const details = usePokemonDetails(
     `https://pokeapi.co/api/v2/pokemon/${pokemon ? pokemon : pokeId}`
   );

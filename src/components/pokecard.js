@@ -1,7 +1,9 @@
 import { usePokemonDetails } from "../hooks/pokemon";
+import { useNavigate } from "react-router-dom";
 //Style
 import CardStyle from "../scss/pokecard.module.scss";
 const PokeCard = ({ data }) => {
+  const navigate = useNavigate();
   const details = usePokemonDetails(data.url);
 
   if (!details)
@@ -11,8 +13,15 @@ const PokeCard = ({ data }) => {
       </div>
     );
 
+  const sendToDetail = (pokeId) => {
+    navigate(`/pokeReact/${pokeId}`);
+  };
+
   return (
-    <div className={CardStyle.Pokecard}>
+    <div
+      onClick={(e) => sendToDetail(details.id)}
+      className={CardStyle.Pokecard}
+    >
       <div className={CardStyle.Pokecard__wrapper}>
         <div className={CardStyle.Pokecard__img}>
           <img
