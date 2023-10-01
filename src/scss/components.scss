@@ -101,3 +101,31 @@
         transform: rotate(-45deg);
     }
 }
+
+.pokemonDetail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    &__desc{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    &__image{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        aspect-ratio: 1 / 0.5;  
+        text-align: center;     
+    }
+    &__img{
+        height: 100%;        
+    }
+    &__abilities{
+        grid-column: auto / 2 span;
+        grid-row: auto / 1 span;
+    }
+    &__locations{
+        grid-column: auto / 2 span;
+        grid-row: auto / 1 span;
+
+    }
+}

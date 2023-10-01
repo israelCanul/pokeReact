@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import Root, { loader as RootLoader } from "./routes/root";
 import ErrorPage from "./pages/error-page";
 import PokemonDetail from "./pages/pokemon-detail";
+
 import Home from "./pages/home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { PokemonProvider } from "./context/PokemonsContext";
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/:pokemon",
+        path: "pokeReact/:pokemon",
         element: <PokemonDetail />,
       },
     ],

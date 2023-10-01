@@ -1,8 +1,10 @@
 import Pagination from "../components/pagination";
 import { MyContext } from "../context/PokemonsContext";
+import { useParams } from "react-router-dom";
 import { useContext } from "react";
+import PokemonDetail from "./pokemon-detail";
 
-const PokemonDetail = () => {
+const PokemonHome = () => {
   const pokeContext = useContext(MyContext);
 
   const renderPag = () => {
@@ -18,4 +20,4 @@ const PokemonDetail = () => {
   );
 };
 
-export default PokemonDetail;
+export default PokemonHome;
