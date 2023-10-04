@@ -1,0 +1,48 @@
+@import "vars.scss";
+.move{
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid rgba(white, 0.4);
+    border-radius: 5px;
+    font-size:$sizeTextSmall;
+    background-color: rgba(yellow, 0.3);
+    &__name{
+        font-size:$sizeText;
+        color: white;
+        background-color: green;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 2px 5px;
+        width: auto;
+        text-align: center;
+        border-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-family: pokemon;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+    &__wraperDesc{
+        // background-color: yellow;
+        padding: 0px 5px 5px;
+    }
+    &__type{
+        
+        text-transform: capitalize;
+        color: $redS;
+        font-weight: 600;
+    }
+    &__desc{
+        padding: 5px;
+        text-align: center;
+        color: black;
+        font-weight: 600;
+    }
+    &__stats{
+
+    }
+    &__stat{
+
+    }
+}

@@ -126,6 +126,18 @@
     &__locations{
         grid-column: auto / 2 span;
         grid-row: auto / 1 span;
-
     }
+    &__moves{
+        grid-column: auto / 2 span;
+    }
+    &__movesWrapper{
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
 }

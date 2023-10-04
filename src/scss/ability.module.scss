@@ -1,0 +1,16 @@
+@import "vars.scss";
+.ability{
+    // background-color: red;
+    padding: 5px;
+    &__name{
+        font-family: pokemon;
+        line-height: 25px;
+        color: white;
+        text-shadow: 3px 4px 7px rgba($redS, 1)
+    }
+    &__description{
+        color: white;
+        font-size: $sizeText;
+        padding: 5px;
+    }
+}
