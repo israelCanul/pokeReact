@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/pokeReact/static/css/main.4c94b148.css",
-    "main.js": "/pokeReact/static/js/main.b5770d42.js",
+    "main.css": "/pokeReact/static/css/main.0b0ca5c9.css",
+    "main.js": "/pokeReact/static/js/main.17f1dee7.js",
     "static/js/787.f1b71fb4.chunk.js": "/pokeReact/static/js/787.f1b71fb4.chunk.js",
     "static/media/pokereact-logo.png": "/pokeReact/static/media/pokereact-logo.1fb413f5160e4ddf8f11.png",
     "static/media/Pokemon Hollow.ttf": "/pokeReact/static/media/Pokemon Hollow.47f77ce9939c5330492b.ttf",
     "static/media/Pokemon Solid.ttf": "/pokeReact/static/media/Pokemon Solid.5d60be1f7ff5fcc21fc1.ttf",
     "index.html": "/pokeReact/index.html",
+    "static/media/back-arrow-navigation.svg": "/pokeReact/static/media/back-arrow-navigation.46f7e1241bd6506eaaf51a54248a47c1.svg",
     "static/media/icons8-search.svg": "/pokeReact/static/media/icons8-search.44144c63f1114bd734334869ead5c143.svg",
-    "main.4c94b148.css.map": "/pokeReact/static/css/main.4c94b148.css.map",
-    "main.b5770d42.js.map": "/pokeReact/static/js/main.b5770d42.js.map",
+    "main.0b0ca5c9.css.map": "/pokeReact/static/css/main.0b0ca5c9.css.map",
+    "main.17f1dee7.js.map": "/pokeReact/static/js/main.17f1dee7.js.map",
     "787.f1b71fb4.chunk.js.map": "/pokeReact/static/js/787.f1b71fb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c94b148.css",
-    "static/js/main.b5770d42.js"
+    "static/css/main.0b0ca5c9.css",
+    "static/js/main.17f1dee7.js"
   ]
 }
