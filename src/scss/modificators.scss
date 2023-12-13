@@ -1,33 +1,49 @@
-.m_df-cc{
+.m_df-cc {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.m_df-sc{
+
+.m_df-sc {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.m_df-ec{
+
+.m_df-ec {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.m_df-cs{
+
+.m_df-cs {
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
-.br_default{
+
+.br_default {
     border-radius: 5px;
 }
-.fs--l{
+
+.fs--l {
     line-height: 30px !important;
     font-size: 1.3rem;
 }
-.ff--pokemon{
+
+.fs--pokemonName {
+    line-height: 55px !important;
+    font-size: 2rem;
+}
+
+.ff--pokemon {
     font-family: pokemon;
 }
-.tt__capitalize{
+
+.tt__capitalize {
     text-transform: capitalize;
+}
+
+.df__column {
+    flex-direction: column;
 }

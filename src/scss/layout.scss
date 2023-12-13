@@ -1,24 +1,28 @@
-*{
+* {
     box-sizing: border-box;
 }
-.main{
+
+.main {
     background-color: $orange;
     width: 100%;
     height: auto;
-    .header{
+    min-height: 100vh;
+
+    .header {
         width: 100%;
         height: $headerSize;
         padding: 20px 5px 5px;
-        &__logo{
+
+        &__logo {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        &__img{
 
-        }
+        &__img {}
     }
-    .content{
+
+    .content {
         // background-color: red;
         // height: calc(100vh - #{$headerSize} - 30px);
         width: 1000px;
